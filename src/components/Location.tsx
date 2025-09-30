@@ -38,14 +38,17 @@ const Location = () => {
         </div>
 
         <div className="max-w-5xl mx-auto">
-          {/* Map Placeholder */}
-          <div className="bg-muted rounded-2xl overflow-hidden mb-8 shadow-[var(--shadow-hover)]">
-            <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="h-16 w-16 text-primary mx-auto mb-4" />
-                <p className="text-lg font-medium text-foreground">Carte interactive</p>
-                <p className="text-sm text-muted-foreground">15 Rue de la Petite Bleue, 75009 Paris</p>
-              </div>
+          {/* Map */}
+          <div className="rounded-2xl overflow-hidden mb-8 shadow-[var(--shadow-hover)]">
+            <div className="relative aspect-video bg-muted">
+              <iframe
+                title="Carte de la Petite Bleue"
+                src="https://www.google.com/maps?q=15+Rue+de+la+Petite+Bleue,+75009+Paris&output=embed"
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+                className="absolute inset-0 h-full w-full border-0"
+              />
             </div>
           </div>
 
