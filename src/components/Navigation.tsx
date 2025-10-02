@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import ReservationDialog from "@/components/ReservationDialog";
 import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
@@ -33,9 +34,13 @@ const Navigation = () => {
                 {link.label}
               </a>
             ))}
-            <Button variant="default" size="sm">
-              Réserver
-            </Button>
+            <ReservationDialog
+              trigger={
+                <Button variant="default" size="sm">
+                  Réserver
+                </Button>
+              }
+            />
           </div>
 
           {/* Mobile Menu Button */}
@@ -62,9 +67,13 @@ const Navigation = () => {
                   {link.label}
                 </a>
               ))}
-              <Button variant="default" size="sm" className="w-full">
-                Réserver
-              </Button>
+              <ReservationDialog
+                trigger={
+                  <Button variant="default" size="sm" className="w-full">
+                    Réserver
+                  </Button>
+                }
+              />
             </div>
           </div>
         )}
