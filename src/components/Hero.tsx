@@ -20,7 +20,7 @@ const Hero = () => {
         <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6 drop-shadow-lg animate-fade-in">
           La Petite Bleue
         </h1>
-        <p className="text-xl md:text-2xl text-white mb-4 font-light drop-shadow-md">
+        <p className="text-xl md:text-2xl text-white mb-4 font-light ">
           Café de spécialité & All-day Brunch
         </p>
         <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto drop-shadow-md">
