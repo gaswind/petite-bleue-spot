@@ -2,6 +2,7 @@ import { Coffee, Croissant, Cake } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import coffeePastries from "@/assets/coffee-pastries.jpg";
+import menuPdf from "@/assets/menu.pdf";
 
 const Menu = () => {
   const menuCategories = [
@@ -73,8 +74,10 @@ const Menu = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button variant="default" size="lg">
-            Télécharger la carte complète
+          <Button variant="default" size="lg" asChild>
+            <a href={menuPdf} download="petite-bleue-menu.pdf">
+              Télécharger la carte complète
+            </a>
           </Button>
           <Button variant="outline" size="lg">
             Réserver une table
