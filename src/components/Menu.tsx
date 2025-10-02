@@ -1,4 +1,5 @@
 import { Coffee, Croissant, Cake } from "lucide-react";
+import ReservationDialog from "@/components/ReservationDialog";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import coffeePastries from "@/assets/coffee-pastries.jpg";
@@ -79,9 +80,13 @@ const Menu = () => {
               Télécharger la carte complète
             </a>
           </Button>
-          <Button variant="outline" size="lg">
-            Réserver une table
-          </Button>
+          <ReservationDialog
+            trigger={
+              <Button variant="outline" size="lg">
+                Réserver une table
+              </Button>
+            }
+          />
         </div>
       </div>
     </section>
